@@ -13,7 +13,7 @@
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.0.0"),
+    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.1.0"),
 ]
 ```
 
@@ -44,7 +44,7 @@ try await meeting.login(token: token)
 
 ## 版本
 
-当前版本 **1.0.0**。
+当前版本 **1.1.0**。
 
 | 平台 | 最低版本 |
 | --- | --- |
