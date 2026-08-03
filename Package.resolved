@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "srtc-swift-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/seastart/srtc-swift-sdk.git",
+      "state" : {
+        "revision" : "18af1b2125c2b700feeb44b5d8076955f5e5f8a2",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "webrtc-xcframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/livekit/webrtc-xcframework.git",
+      "state" : {
+        "revision" : "883f7f39f0733be564eb033d7fa6ce10960f7b7e",
+        "version" : "144.7559.10"
+      }
+    }
+  ],
+  "version" : 2
+}
