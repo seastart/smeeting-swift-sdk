@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/seastart/srtc-swift-sdk.git",
       "state" : {
-        "revision" : "608448837d990338c56e9bd50f529e2d1922fdfb",
-        "version" : "1.1.0"
+        "revision" : "127ea6826356789401b96cd8a72411177d6086f5",
+        "version" : "1.4.0"
       }
     },
     {

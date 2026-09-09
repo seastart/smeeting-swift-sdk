@@ -1,6 +1,6 @@
 # SMeeting Swift SDK
 
-多人会议 SDK，支持 iOS 13+ 与 macOS 10.15+。提供主持人、举手、静音全场、等候室、
+多人会议 SDK，支持 iOS 16+ 与 macOS 14+。提供主持人、举手、静音全场、等候室、
 子会议等会控能力；底层音视频由 SRTC 提供。
 
 本仓库只包含分发清单，SDK 以预编译 XCFramework 形式提供。
@@ -13,7 +13,7 @@
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.2.1"),
+    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.3.0"),
 ]
 ```
 
@@ -76,7 +76,7 @@ try await meeting.requestShare(source: displays[0])
    所以要在你的 `Package.swift`（或 Xcode 的 Package Dependencies）里**再加一条**：
 
    ```swift
-   .package(url: "https://github.com/seastart/srtc-swift-sdk.git", exact: "1.3.2"),
+   .package(url: "https://github.com/seastart/srtc-swift-sdk.git", exact: "1.4.0"),
    ```
 
    ⚠️ 只把 `SRTCBroadcastKit` 加到扩展 target 上：加到 App target 会让一个进程里出现
@@ -146,12 +146,12 @@ meeting.clearAudioRouteOverride()           // 撤销临时覆盖，回落到持
 
 ## 版本
 
-当前版本 **1.2.1**（依赖 SRTC **1.3.2**）。
+当前版本 **1.3.0**（依赖 SRTC **1.4.0**）。
 
 | 平台 | 最低版本 |
 | --- | --- |
-| iOS | 13.0 |
-| macOS | 10.15 |
+| iOS | 16.0 |
+| macOS | 14.0 |
 | Xcode | 15.0 |
 
 - macOS 指定显示器/窗口共享需要 macOS 12.3+
