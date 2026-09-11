@@ -13,7 +13,7 @@
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.3.0"),
+    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.3.1"),
 ]
 ```
 
@@ -76,7 +76,7 @@ try await meeting.requestShare(source: displays[0])
    所以要在你的 `Package.swift`（或 Xcode 的 Package Dependencies）里**再加一条**：
 
    ```swift
-   .package(url: "https://github.com/seastart/srtc-swift-sdk.git", exact: "1.4.0"),
+   .package(url: "https://github.com/seastart/srtc-swift-sdk.git", exact: "1.4.1"),
    ```
 
    ⚠️ 只把 `SRTCBroadcastKit` 加到扩展 target 上：加到 App target 会让一个进程里出现
@@ -146,7 +146,7 @@ meeting.clearAudioRouteOverride()           // 撤销临时覆盖，回落到持
 
 ## 版本
 
-当前版本 **1.3.0**（依赖 SRTC **1.4.0**）。
+当前版本 **1.3.1**（依赖 SRTC **1.4.1**）。
 
 | 平台 | 最低版本 |
 | --- | --- |
