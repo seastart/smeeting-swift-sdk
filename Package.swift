@@ -29,18 +29,18 @@ let package = Package(
         // ⚠️ iOS 全屏屏幕共享的扩展侧要链 `SRTCBroadcastKit`（srtc-swift-sdk 的第二个产物，
         // 不依赖 WebRTC）。SwiftPM 不允许使用传递依赖的产品，所以接入方需要在自己的
         // Package.swift / Xcode 工程里**再声明一条 srtc-swift-sdk 依赖**，版本与这里 pin 的
-        // 1.5.4 保持一致，并且只把 SRTCBroadcastKit 加到 Broadcast Upload Extension
+        // 1.5.5 保持一致，并且只把 SRTCBroadcastKit 加到 Broadcast Upload Extension
         // 的 target 上——加到 App target 会让一个进程里出现两份同名类型（App 侧的 SRTC
         // 里已静态含有同一份代码），反过来让扩展去链 SRTC/SMeeting 则会把 WebRTC 拉进
         // 只有 50MB 内存上限的扩展进程。
-        .package(url: "https://github.com/seastart/srtc-swift-sdk.git", exact: "1.5.4"),
+        .package(url: "https://github.com/seastart/srtc-swift-sdk.git", exact: "1.5.5"),
     ],
     targets: [
         // 预编译的 SDK 本体。`import SMeeting` 导入的就是它。
         .binaryTarget(
             name: "SMeeting",
-            url: "https://repo.open.seastart.cn/repository/vcs-releases/meeting-swift-sdk-1.5.4.zip",
-            checksum: "815b6deed6e9fa21107ecb2b5b8f29b52f91d705eaa5e8514caa82bc095fb0eb"
+            url: "https://repo.open.seastart.cn/repository/vcs-releases/meeting-swift-sdk-1.5.5.zip",
+            checksum: "0a84da26adfeb27e16e54652d60de030f1d4169f3bdebaa0f27eb759ebc6c522"
         ),
         // 中转 target。binaryTarget 自己不能声明 dependencies，所以套一层普通 target
         // 把 SRTC 依赖（及其带过来的 WebRTC）传递给使用方。
