@@ -39,8 +39,8 @@ let package = Package(
         // 预编译的 SDK 本体。`import SMeeting` 导入的就是它。
         .binaryTarget(
             name: "SMeeting",
-            url: "https://repo.open.seastart.cn/repository/vcs-releases/meeting-swift-sdk-1.8.0.zip",
-            checksum: "c305b3ff2a3a72ad59c3c50026139a1caaa65d15d7ddc30a0271bea30d3c04a4"
+            url: "https://repo.open.seastart.cn/repository/vcs-releases/meeting-swift-sdk-1.9.0.zip",
+            checksum: "145b4eed2d0be2fbc65396826fa84892d1011883413e963e921a6bc93705ceff"
         ),
         // 中转 target。binaryTarget 自己不能声明 dependencies，所以套一层普通 target
         // 把 SRTC 依赖（及其带过来的 WebRTC）传递给使用方。
