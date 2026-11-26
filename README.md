@@ -13,7 +13,7 @@
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.13.0"),
+    .package(url: "https://github.com/seastart/smeeting-swift-sdk.git", from: "1.14.0"),
 ]
 ```
 
@@ -146,7 +146,7 @@ meeting.clearAudioRouteOverride()           // 撤销临时覆盖，回落到持
 
 ## 版本
 
-当前版本 **1.13.0**（依赖 SRTC **1.10.0**）。
+当前版本 **1.14.0**（依赖 SRTC **1.10.0**）。
 
 | 平台 | 最低版本 |
 | --- | --- |
